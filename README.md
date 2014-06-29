@@ -14,3 +14,11 @@ reinvent coreutils by C
 * mkdir
 * rmdir
 * rm
+
+## original
+
+site: http://www.gnu.org/software/coreutils/
+
+```
+git clone git://git.sv.gnu.org/coreutils
+```
