@@ -35,6 +35,11 @@ void do_ls(char *path)
     }
     struct dirent *dent;
     while ((dent = readdir(dp)) != NULL) {
+	// ignore entry begin with '.'
+	if (dent->d_name[0] == '.') {
+	    continue;
+	}
+
 	printf("%s  ", dent->d_name);
     }
 
