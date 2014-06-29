@@ -18,7 +18,9 @@ int main(int argc, char *argv[])
     } else {
 	// more than 2 arguments
 	for (i = 1; i <= argc - 1; i++) {
+	    printf("%s:\n", argv[i]);
 	    do_ls(argv[i]);
+	    printf("\n");
 	}
     }
 
