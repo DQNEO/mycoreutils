@@ -1,7 +1,7 @@
 mycoreutils
 ===========
 
-coreutilsをC言語で自作するプロジェクト
+reinvent coreutils by C
 
 ## TODO
 * touch
