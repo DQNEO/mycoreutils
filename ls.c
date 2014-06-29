@@ -7,14 +7,20 @@ void do_ls(char *path);
 
 int main(int argc, char *argv[])
 {
-    char *path;
-    if (argc <= 1) {
-	path = ".";
-    } else {
-	path = argv[1];
-    }
 
-    do_ls(path);
+    if (argc <= 1) {
+	// in case of no arguments
+	do_ls(".");
+    } else if (argc == 2) {
+	// in case of one argument
+	do_ls(argv[1]);
+    } else {
+	// more than 2 arguments
+	int i;
+	for (i = 1; i <= argc - 1; i++) {
+	    do_ls(argv[i]);
+	}
+    }
 
     return 0;
 }
