@@ -4,7 +4,6 @@ mycoreutils
 coreutilsをC言語で自作するプロジェクト
 
 ## TODO
-rmdir
 touch
 rm
 rm -rf
@@ -15,3 +14,4 @@ yes
 ## DONE
 ls
 mkdir
+rmdir
