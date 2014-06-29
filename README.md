@@ -5,7 +5,6 @@ coreutilsをC言語で自作するプロジェクト
 
 ## TODO
 * touch
-* rm
 * rm -rf
 * ln
 * ln -s
@@ -15,3 +14,4 @@ coreutilsをC言語で自作するプロジェクト
 * ls
 * mkdir
 * rmdir
+* rm
