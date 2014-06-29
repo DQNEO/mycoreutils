@@ -1,5 +1,4 @@
-mycoreutils
-===========
+# mycoreutils
 
 reinvent coreutils by C
 
