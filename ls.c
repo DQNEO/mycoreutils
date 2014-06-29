@@ -7,6 +7,7 @@ void do_ls(char *path);
 
 int main(int argc, char *argv[])
 {
+    int i;
 
     if (argc <= 1) {
 	// in case of no arguments
@@ -16,7 +17,6 @@ int main(int argc, char *argv[])
 	do_ls(argv[1]);
     } else {
 	// more than 2 arguments
-	int i;
 	for (i = 1; i <= argc - 1; i++) {
 	    do_ls(argv[i]);
 	}
