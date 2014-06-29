@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <dirent.h>
+
+void do_ls(char *path);
 
 int main(int argc, char *argv[])
 {
@@ -11,12 +14,18 @@ int main(int argc, char *argv[])
 	path = argv[1];
     }
 
+    do_ls(path);
 
+    return 0;
+}
+
+void do_ls(char *path)
+{
     DIR *dp;
     dp = opendir(path);
     if (dp == NULL) {
 	perror(path);
-	return 1;
+	exit(1);
     }
     struct dirent *dent;
     while ((dent = readdir(dp)) != NULL) {
@@ -25,5 +34,5 @@ int main(int argc, char *argv[])
 
     printf("\n");
 
-    return 0;
+    return;
 }
