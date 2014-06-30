@@ -12,8 +12,9 @@ int main(int argc, char *argv[])
 	return 1;
     }
 
-    int ret = 0;
     int i;
+    int ret = 0;
+
     for (i = 1; i <= argc - 1; i++) {
 	if (unlink(argv[i]) != 0) {
 	    perror(argv[i]);
