@@ -1,6 +1,6 @@
 
-all : ls mkdir rmdir rm
+all : ls mkdir rmdir rm touch ln
 
 clean :
-	rm ls mkdir rmdir rm
+	rm ls mkdir rmdir rm touch ln
 
