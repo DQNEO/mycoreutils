@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
     }
 
     int i;
-
     int ret = 0;
+
     for (i = 1; i <= argc - 1; i++) {
 	if (mkdir(argv[i], 0777) != 0) {
 	    perror(argv[i]);
