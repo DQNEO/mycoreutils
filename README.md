@@ -4,7 +4,6 @@ reinvent coreutils by C
 
 ## TODO
 ### file
-* touch
 * rm -rf
 * ln
 * ln -s
@@ -22,6 +21,7 @@ reinvent coreutils by C
 * mkdir
 * rmdir
 * rm
+* touch
 
 ## original
 
