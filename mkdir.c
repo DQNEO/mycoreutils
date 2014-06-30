@@ -14,13 +14,13 @@ int main(int argc, char *argv[])
 
     int i;
 
-    int result = 0;
+    int ret = 0;
     for (i = 1; i <= argc - 1; i++) {
 	if (mkdir(argv[i], 0777) != 0) {
 	    perror(argv[i]);
-	    result = 1;
+	    ret = 1;
 	}
     }
 
-    return result;
+    return ret;
 }
